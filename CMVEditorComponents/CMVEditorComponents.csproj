@@ -1,0 +1,193 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EADD393-4992-4DFE-A402-A8FCDC4A3AF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMVEditorComponents</RootNamespace>
+    <AssemblyName>CMVEditorComponents</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CMVInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CMVInfoControl.Designer.cs">
+      <DependentUpon>CMVInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMVPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CMVPlayer.Designer.cs">
+      <DependentUpon>CMVPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColourPickerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColourPickerControl.Designer.cs">
+      <DependentUpon>ColourPickerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlainButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlainButton.Designer.cs">
+      <DependentUpon>PlainButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TileSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TileSelector.Designer.cs">
+      <DependentUpon>TileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TileSelectorGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TileSelectorGrid.Designer.cs">
+      <DependentUpon>TileSelectorGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimelineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimelineControl.Designer.cs">
+      <DependentUpon>TimelineControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CMVPlayerEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CMVPlayerEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMVInfoControl.resx">
+      <DependentUpon>CMVInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMVPlayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CMVPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColourPickerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColourPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlainButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlainButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerControls.resx">
+      <DependentUpon>PlayerControls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TileSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TileSelectorGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TileSelectorGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimelineControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimelineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimelineControls.resx">
+      <DependentUpon>TimelineControls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimelineZoom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimelineZoom.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMV\CMVData.csproj">
+      <Project>{4E778754-6D56-4779-97A0-5D5C487D2CF8}</Project>
+      <Name>CMVData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\close_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CMVPlayerEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerControls.Designer.cs">
+      <DependentUpon>PlayerControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimelineControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimelineControls.Designer.cs">
+      <DependentUpon>TimelineControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimelineZoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimelineZoom.Designer.cs">
+      <DependentUpon>TimelineZoom.cs</DependentUpon>
+    </Compile>
+    <Content Include="res\pause_icon.png" />
+    <Content Include="res\play_icon.png" />
+    <Content Include="res\rewind_icon.png" />
+    <Content Include="res\skiptoend_icon.png" />
+    <Content Include="res\stepbackwards_icon.png" />
+    <Content Include="res\stepforwards_icon.png" />
+    <None Include="res\timeline_zoomout_icon.png" />
+    <None Include="res\timeline_zoomin_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
