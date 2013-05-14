@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual C# Express 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMVEditor", "CMVEditor.csproj", "{0914DA4C-EAAF-4A5D-A5DD-EB2078E7019D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMVEditorComponents", "..\CMVEditorComponents\CMVEditorComponents.csproj", "{9EADD393-4992-4DFE-A402-A8FCDC4A3AF6}"
